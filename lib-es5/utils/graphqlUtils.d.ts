@@ -1,0 +1,11 @@
+import { DocumentNode, FieldNode } from "graphql";
+export declare function getOperationName(doc: DocumentNode): string | null;
+export declare function getQueryNodes(doc: DocumentNode): Array<FieldNode>;
+export declare function getQueryNode(doc: DocumentNode): FieldNode | null;
+export declare function getQueryName(doc: DocumentNode): string | null;
+export declare function getQueryFields(query: string): string | null;
+export declare function getFragmentFields(fragment: string): string | null;
+export declare function getFragments(query: string): string;
+export declare function hasTopLevelField(doc: DocumentNode, fieldName: string): boolean;
+export declare function fragmentHasField(doc: DocumentNode, fragmentName: string, fieldName: string): boolean;
+export declare function hasPageInfoField(doc: DocumentNode): boolean;

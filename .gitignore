@@ -1,8 +1,6 @@
 .idea
 .tarballs
 node_modules
-lib/
-lib-es5/
 yarn.lock
 package-lock.json
 .vscode
